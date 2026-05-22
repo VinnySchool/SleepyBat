@@ -4,23 +4,25 @@ body {
   font-family: Nunito, sans-serif;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+/* Navbar */
+.navbar {
+  background-color: #120b28 !important;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
+.navbar-brand {
+  color: #f5f0ff !important;
+  font-weight: bold;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
+.nav-link {
+  color: #f5f0ff !important;
 }
 
+.nav-link.active {
+  text-decoration: underline;
+}
+
+/* Hero + Sections */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -35,27 +37,40 @@ nav {
   margin-bottom: 30px;
 }
 
-.features {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.feat-card {
+/* Cards */
+.card {
   background: #1f163f;
-  padding: 20px;
+  color: #f5f0ff;
+  border: none;
   border-radius: 10px;
 }
 
+/* Buttons */
 .btn-primary {
   background: #c4a8f5;
   border: none;
-  padding: 12px 24px;
+  padding: 10px 20px;
   border-radius: 30px;
-  cursor: pointer;
 }
 
+.btn-primary:hover {
+  background: #b293e6;
+}
+
+/* Accordion */
+.accordion-button {
+  background-color: #1f163f;
+  color: #f5f0ff;
+}
+
+.accordion-body {
+  background-color: #120b28;
+  color: #f5f0ff;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
+  background-color: #1f163f;
 }
